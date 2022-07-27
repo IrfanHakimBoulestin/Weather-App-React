@@ -1,0 +1,30 @@
+.container-meta{
+  background-color: green;
+}
+
+.colour-unset{
+  color: unset;
+}
+
+.d-inline-grid{
+  display: inline-grid;
+}
+
+.footer-font{
+  font-size: 0.7rem;
+}
+
+.mt-n125{
+  margin-top: -1.25rem;
+  color: darkblue;
+}
+
+.mt-n1{
+  margin-top: -1rem;
+  color: darkblue;
+}
+
+a{
+  font-weight: bolder;
+  color: palevioletred !important;
+}
