@@ -1,6 +1,6 @@
 import './Navbar.css';
 
-function NavbarHeader() {
+export default function NavbarHeader() {
   return (
       <div id="parentContainer" className="container-meta">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-umbrella-fill ms-1 mb-3" viewBox="0 0 16 16">
@@ -13,5 +13,3 @@ function NavbarHeader() {
       </div>
   );
 }
-
-export default NavbarHeader;

@@ -1,6 +1,6 @@
 import './Navbar.css';
 
-function NavbarFooter(){
+export default function NavbarFooter(){
     return (
         <div>
             <hr/>
@@ -10,5 +10,3 @@ function NavbarFooter(){
         </div>
     )
 }
-
-export default NavbarFooter;

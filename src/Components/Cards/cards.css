@@ -1,0 +1,23 @@
+.weather-card{
+    width: fit-content;
+    height: auto;
+    margin: 1rem;
+}
+
+.column {
+    width: 25%;
+}
+
+.card {
+    box-shadow: 0 20px 8px 0 rgba(255, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f5cbcb;
+}
+
+@media screen and (max-width: 870px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
