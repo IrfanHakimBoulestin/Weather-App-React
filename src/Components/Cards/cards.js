@@ -21,7 +21,7 @@ class Cards extends Component {
                         <center>
                             <button type="button" className="btn btn-primary btn-lg mt-2" onClick={this.props.onclick}>{this.state.buttonTitle}</button>
                         </center>
-                        <div id="returnedResults"></div>
+                        <div id={this.props.responseId}></div>
                     </div>
                 </div>
             </div>
