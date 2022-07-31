@@ -5,14 +5,15 @@ import NavbarHeader from './Components/Meta/NavbarHeader';
 import NavbarFooter from './Components/Meta/NavbarFooter';
 import reportWebVitals from './Analytics/reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Cards from "./Components/Cards/cards";
-import {getWeatherForLocationProvided} from "./Components/currentWeather";
-
+import Cards from "./Components/Cards/Cards";
+import {getWeatherForLocationProvided} from "./Components/CurrentWeather";
+import BackendUp from "./Components/BackendUp";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavbarHeader />
+    <BackendUp/>
       <div className="row">
           <Cards cardTitle="Get Current Weather For Location" cardSubHeader="Please Provide Full Postcode: " responseId="currentWeatherResponse" onclick={getWeatherForLocationProvided} imageSvg={
               <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" className="bi bi-thermometer mt-1" viewBox="0 0 16 16">

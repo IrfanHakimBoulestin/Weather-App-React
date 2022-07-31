@@ -1,5 +1,5 @@
 import {render, screen} from '@testing-library/react';
-import Cards from "../Components/Cards/cards";
+import Cards from "../Components/Cards/Cards";
 
 const mockOnClick = () => jest.fn()
 

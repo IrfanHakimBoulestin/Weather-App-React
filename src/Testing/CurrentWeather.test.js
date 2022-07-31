@@ -2,7 +2,7 @@ import {
     appendCurrentWeatherResponse,
     getWeatherForLocationProvided,
     getWeatherSvg
-} from "../Components/currentWeather";
+} from "../Components/CurrentWeather";
 import axios from "axios";
 
 test('Get Weather for Location Provided', () => {
