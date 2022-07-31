@@ -4,6 +4,10 @@ This projects aims to create a basic weather app in React and uses the following
 
 * WeatherAPI: https://rapidapi.com/weatherapi/api/weatherapi-com/
 * Google Firebase for the database.
+* Backend for the application will use Node / Express
+* Project will include Gradle
+
+App can be accessed via the following location: https://weather-app-irfan.herokuapp.com/
 
 ## Available Scripts
 
