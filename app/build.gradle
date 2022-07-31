@@ -1,0 +1,30 @@
+plugins {
+    id 'groovy'
+    id 'application'
+    id "com.github.node-gradle.node" version "3.4.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.10'
+    implementation 'com.google.guava:guava:31.0.1-jre'
+}
+
+node{
+    download = true
+}
+
+application {
+    mainClass = 'weather.app.react.App'
+}
+
+task startApplication(type: NpmTask) {
+    args = ['start']
+}
+
+task runTestSuite(type: NpmTask) {
+    args = ['test']
+}
