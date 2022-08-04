@@ -1,14 +1,18 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
+require("dotenv").config({path: '.env'});
+const MONGO_DB_URL = process.env.MONGODB_URL
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require("cors");
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const testAPIRouter = require("./routes/testAPI");
+const mongoose = require("mongoose");
 
 const app = express();
+mongoose.connect( MONGO_DB_URL);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
