@@ -34,7 +34,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm --prefix /Projects/Weather-App-React/api start\" \"react-scripts start\"",
-    "build": "concurrently \"npm --prefix /Projects/Weather-App-React/api start\" \"react-scripts build\"",
+    "build": "react-scripts build",
     "test": "react-scripts test --coverage  --watchAll=false",
     "eject": "react-scripts eject"
   },
