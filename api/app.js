@@ -1,7 +1,7 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-require("dotenv").config({path: '.env'});
+require("dotenv").config({path: '../.env'});
 const MONGO_DB_URL = process.env.MONGODB_URL
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');

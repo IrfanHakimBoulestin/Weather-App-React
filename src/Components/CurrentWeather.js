@@ -6,7 +6,7 @@ export const getWeatherForLocationProvided = () => {
         url: 'https://weatherapi-com.p.rapidapi.com/current.json',
         params: {q: document.getElementById('inputtedLocation')?.value},
         headers: {
-            'X-RapidAPI-Key': '25b89d0b19mshf961d4a626e2013p1c4951jsn017c654323e8',
+            'X-RapidAPI-Key': process.env.REACT_APP_WEATHER_API_KEY,
             'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
         }
     };

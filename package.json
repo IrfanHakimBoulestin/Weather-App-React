@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
+    "dotenv": "^16.0.1",
     "jquery": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -26,11 +27,13 @@
         "statements": 80
       }
     },
-    "coverageReporters": ["text"]
+    "coverageReporters": [
+      "text"
+    ]
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "concurrently \"npm --prefix /Projects/Weather-App-React/api start\" \"react-scripts start\"",
+    "build": "concurrently \"npm --prefix /Projects/Weather-App-React/api start\" \"react-scripts build\"",
     "test": "react-scripts test --coverage  --watchAll=false",
     "eject": "react-scripts eject"
   },
